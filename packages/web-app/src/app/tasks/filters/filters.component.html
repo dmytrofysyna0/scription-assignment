@@ -1,0 +1,10 @@
+<div class="container">
+  <mat-chip-listbox aria-label="Filter selection">
+    <mat-chip-option
+      *ngFor="let filter of filters"
+      (selectionChange)="filterTask(filter.key, $event)"
+    >
+      {{ filter.label }}
+    </mat-chip-option>
+  </mat-chip-listbox>
+</div>
